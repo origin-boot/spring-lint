@@ -1,6 +1,6 @@
 package com.origin.lint;
 
-import com.origin.lint.infrastructure.checker.FileChecker;
+import com.origin.lint.infrastructure.checker.Checker;
 
 public class App {
   public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class App {
     boolean hasError = false;
 
     for (String path : args) {
-      FileChecker fc = new FileChecker(path);
+      Checker fc = new Checker(path);
       try {
         fc.run();
         hasError = hasError || fc.hasError();
