@@ -5,7 +5,7 @@
   <groupId>com.origin.lint</groupId>
   <artifactId>spring-lint</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>spring-lint</name>
   <url>http://maven.apache.org</url>
   <properties>
