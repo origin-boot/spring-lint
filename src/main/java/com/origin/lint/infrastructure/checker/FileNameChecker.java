@@ -14,10 +14,10 @@ public class FileNameChecker implements FileChecker {
   private Map<String, String> checks = new HashMap<>();
 
   public FileNameChecker() {
-    checks.put(".*VO$", "file name cannot end with VO");
-    checks.put(".*DTO$", "file name cannot end with DTO");
-    checks.put(".*DAO$", "file name cannot end with DAO");
-    checks.put(".*PO$", "file name cannot end with PO");
+    checks.put(".*V[Oo]$", "file name cannot end with VO/Vo");
+    checks.put(".*D[Tt][Oo]$", "file name cannot end with DTO/Dto");
+    checks.put(".*D[Aa][Oo]$", "file name cannot end with DAO/Dao");
+    checks.put(".*P[Oo]$", "file name cannot end with PO/Po");
   }
 
   @Override

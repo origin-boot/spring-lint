@@ -11,6 +11,7 @@ public class ForbiddenWordChecker implements FileChecker {
 
   public ForbiddenWordChecker() {
     checks.put("@" + "Query", "Query annotation found");
+    checks.put("@" + "Modifying", "Modifying annotation found");
     checks.put("select" + " *", "SQL 'SELECT" + " *' found");
     checks.put("SELECT" + " *", "SQL 'SELECT" + " *' found");
   }
